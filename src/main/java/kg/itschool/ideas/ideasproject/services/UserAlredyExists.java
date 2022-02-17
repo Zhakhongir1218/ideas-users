@@ -1,6 +1,6 @@
 package kg.itschool.ideas.ideasproject.services;
 
-public class UserAlredyExists extends Exception{
+public class UserAlredyExists extends RuntimeException{
     public UserAlredyExists() {
     }
 

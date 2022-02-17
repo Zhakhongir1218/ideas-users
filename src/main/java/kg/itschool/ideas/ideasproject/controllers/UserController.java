@@ -1,6 +1,7 @@
 package kg.itschool.ideas.ideasproject.controllers;
 
 import kg.itschool.ideas.ideasproject.models.dto.UserDTO;
+import kg.itschool.ideas.ideasproject.models.dto.UserDtoForLogin;
 import kg.itschool.ideas.ideasproject.services.UserAlredyExists;
 import kg.itschool.ideas.ideasproject.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,8 +17,8 @@ public class UserController {
     public UserDTO registration(@RequestBody UserDTO userDTO) throws UserAlredyExists {
         return userService.registration(userDTO);
     }
-    @GetMapping("/login")
-    public UserDTO loginByCode(@RequestParam int code) throws UserAlredyExists {
-        return userService.login(code);
+    @PostMapping("/login")
+    public String loginByCode(@RequestBody UserDtoForLogin userDtoForLogin) throws UserAlredyExists {
+        return userService.login(userDtoForLogin);
     }
 }

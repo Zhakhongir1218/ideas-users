@@ -14,6 +14,7 @@ import java.time.LocalDate;
 @Entity
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @ToString
+@Table(name = "users")
 public class Users {
 
     @Id
@@ -27,7 +28,7 @@ public class Users {
     @JsonFormat(pattern = "dd.mm.yyyy hh:mm:ss",shape = JsonFormat.Shape.STRING)
     LocalDate add_date;
 
-    Integer code;
+    String code;
 
     Boolean activated;
 

@@ -21,5 +21,5 @@ public class IdeaDTO {
 
     Boolean contact_with_me;
 
-    UserDTO id_user;
+    String phone;
 }

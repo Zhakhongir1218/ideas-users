@@ -18,7 +18,7 @@ public class UserDTO {
 
     LocalDate add_date;
 
-    Integer code;
+    String code;
 
     Boolean activated;
 }
