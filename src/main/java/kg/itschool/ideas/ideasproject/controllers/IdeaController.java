@@ -1,6 +1,7 @@
 package kg.itschool.ideas.ideasproject.controllers;
 
 import kg.itschool.ideas.ideasproject.models.dto.IdeaDTO;
+import kg.itschool.ideas.ideasproject.models.entities.Ideas;
 import kg.itschool.ideas.ideasproject.services.IdeaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,7 +17,7 @@ public class IdeaController {
 
 
     @PostMapping("/save/idea")
-    public IdeaDTO save(@RequestBody IdeaDTO ideaDTO) {
+    public Ideas save(@RequestBody IdeaDTO ideaDTO) {
 
         return ideaService.save(ideaDTO);
 
