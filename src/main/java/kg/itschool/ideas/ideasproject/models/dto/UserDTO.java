@@ -10,7 +10,7 @@ import java.time.LocalDate;
 @FieldDefaults (level = AccessLevel.PRIVATE)
 public class UserDTO {
 
-    Integer id;
+    Integer id_user;
 
     String name;
 

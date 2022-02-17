@@ -21,5 +21,5 @@ public class IdeaDTO {
 
     Boolean contact_with_me;
 
-    Integer id_user;
+    UserDTO id_user;
 }

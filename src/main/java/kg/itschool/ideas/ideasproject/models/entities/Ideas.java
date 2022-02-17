@@ -29,5 +29,6 @@ public class Ideas {
     Boolean contact_with_me;
 
     @ManyToOne
+    @JoinColumn(name = "id_user")
     Users id_user;
 }
