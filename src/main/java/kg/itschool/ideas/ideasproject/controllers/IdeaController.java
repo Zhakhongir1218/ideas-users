@@ -17,7 +17,7 @@ public class IdeaController {
 
 
     @PostMapping("/save/idea")
-    public Ideas save(@RequestBody IdeaDTO ideaDTO) {
+    public String save(@RequestBody IdeaDTO ideaDTO) {
 
         return ideaService.save(ideaDTO);
 

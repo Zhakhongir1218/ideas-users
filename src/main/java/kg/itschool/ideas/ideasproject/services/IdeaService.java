@@ -5,5 +5,5 @@ import kg.itschool.ideas.ideasproject.models.entities.Ideas;
 
 public interface IdeaService {
 
-    Ideas save(IdeaDTO ideaDTO);
+    String save(IdeaDTO ideaDTO);
 }

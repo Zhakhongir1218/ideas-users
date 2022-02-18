@@ -25,13 +25,12 @@ public class Users {
 
     String phone;
 
-    @JsonFormat(pattern = "dd.mm.yyyy hh:mm:ss",shape = JsonFormat.Shape.STRING)
+    @JsonFormat(pattern = "dd.mm.yyyy hh:mm:ss", shape = JsonFormat.Shape.STRING)
     LocalDate add_date;
 
     String code;
 
     Boolean activated;
-
 
 
 }
